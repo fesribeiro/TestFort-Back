@@ -1,0 +1,18 @@
+{
+  "name": "TestFort",
+  "version": "1.0.0",
+  "description": "Project TestFortbrasil",
+  "main": "index.js",
+  "author": "Felipe Ribeiro",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.2",
+    "nodemon": "^1.18.11"
+  }
+}
