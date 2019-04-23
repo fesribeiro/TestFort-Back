@@ -30,15 +30,12 @@ class EstablishmentController {
     }
 
     async update(req,res){
-        const establishment = await Establishment.findOneAndUpdate(req.body.id, {
+        console.log(JSON.stringify(req.params))
+        const establishment = await Establishment.findOneAndUpdate(req.params.id, {
             Establishment: req.body.Establishment,
             Location: req.body.Location,
             Owner: req.body.Owner
-        },
-            {
-                new: true
-            }
-        );
+        });
         res.json(establishment);
     }
 }
